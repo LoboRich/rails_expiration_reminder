@@ -1,4 +1,5 @@
 class SuppliesController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_supply, only: %i[ show edit update destroy ]
 
   # GET /supplies or /supplies.json
