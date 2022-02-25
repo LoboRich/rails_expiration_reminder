@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Category:
+  = @supply.category
+%p
+  %b Name:
+  = @supply.name
+%p
+  %b Expiry date:
+  = @supply.expiry_date
+%p
+  %b Status:
+  = @supply.status
+%p
+  %b Quantity:
+  = @supply.quantity
+
+= link_to 'Edit', edit_supply_path(@supply)
+\|
+= link_to 'Back', supplies_path
